@@ -56,7 +56,7 @@ function timeElapse(date){
 	var result = "Days <span class=\"digit\">" + days + "</span> Hours <span class=\"digit\">" + hours + "</span> Minutes <span class=\"digit\">" + minutes; 
 	$("#clock").html(result);
 
-	var text = "To my partner in crime, my shoulder to cry on, and the one who always knows how to make me smile—Happy Birthday! Life wouldn’t be the same without you ";
+	var text = "Happy Birthday, sis! You’re not just my sister; you’re my lifelong friend, my biggest cheerleader, and my greatest role model. May your day be filled with laughter, love, and all the happiness you bring to those around you. Stay blessed always!";
 	document.getElementById("text").style.color = "black";  // This will change the second line to red.
 
 	$("#message-box").html(text);
