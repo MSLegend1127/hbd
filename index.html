@@ -187,20 +187,29 @@
         }));
 
         var textAnimate = eval(Jscex.compile("async", function () {
-		    var together = new Date();
-		    together.setFullYear(2009, 9, 10); 			
-		    together.setHours(20);						
-		    together.setMinutes(0);					
-		    together.setSeconds(0);					
-		    together.setMilliseconds(2);				
-
-		    $("#code").show().typewriter();
+            // Set the date to July 24, 2025, at 12:00:00 AM
+            var together = new Date();
+            together.setFullYear(2007, 6, 24); // July is 6 (0-indexed)
+            together.setHours(0);
+            together.setMinutes(0);
+            together.setSeconds(0);
+            together.setMilliseconds(0);
+        
+            $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
+        
+            // If you want to run it once without updating, remove the while loop
+            
+        
+            // If you want continuous updates, uncomment the loop below:
+            
             while (true) {
                 timeElapse(together);
-                $await(Jscex.Async.sleep(1000));
+                $await(Jscex.Async.sleep(1000)); // Updates every 1 second
             }
+            
         }));
+        
 
         var runAsync = eval(Jscex.compile("async", function () {
             $await(seedAnimate());
